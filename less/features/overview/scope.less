@@ -1,0 +1,19 @@
+// @var: red;
+
+// #page {
+//   @var: white;
+//   #header {
+//     color: @var; // white
+//   }
+// }
+
+// Variables and mixins do not have to be declared before being used so the following Less code is identical to the previous example:
+
+@var: red;
+
+#page {
+  #header {
+    color: @var; // white
+  }
+  @var: white;
+}
